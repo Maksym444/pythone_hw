@@ -10,7 +10,7 @@ def fill_random_list(lst):
         random_num = random.randint(0, 100)
         lst[i] = random_num
 def find_average_from_list(lst):
-    s=lst[0]
+    s=0
     for i in lst:
         s += i
     return s/len(lst)
@@ -18,3 +18,6 @@ fill_random_list(simple_list)
 print_list(simple_list)
 result = find_average_from_list(simple_list)
 print (result)
+
+
+
