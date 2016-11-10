@@ -43,10 +43,11 @@ print (r)
 
 
 7.
-S =data="20.10.2016"
-S1=data [:3]
-S2=data [3:6]
-S3=data [6:]
-a=S2+S1+S3,
-b=S1+S2+S3
-print (a,b)
+def EU_change_USA(S1,S2,S3):
+    result=a,b
+    return result
+data="21.12.2016"
+S1=data [:3];S2=data [3:6];S3=data [6:]
+a=S2+S1+S3; b=S1+S2+S3
+result=EU_change_USA(S1,S2,S3)
+print (result)
