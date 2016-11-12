@@ -57,9 +57,10 @@ import math
 def in_middle(string1, string2):
     result=string1[:math.floor(len(string1)/2)] + string2 + string1[math.floor(len(string1)/2):]
     return result
-string1='Trump Win '
-string2=' Not'
-result=in_middle(string1,string2)
+string1='aaaa'
+string2='bb'
+result1=in_middle(string1,string2)
+result=in_middle(result1,string1)
 print (result)
 
 23. Variant 1 
