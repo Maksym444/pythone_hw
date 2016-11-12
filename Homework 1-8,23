@@ -43,14 +43,15 @@ print (r)
 
 
 7.
-def EU_change_USA(S1,S2,S3):
-    result=a,b
-    return result
-data="21.12.2016"
-S1=data [:3];S2=data [3:6];S3=data [6:]
-a=S2+S1+S3; b=S1+S2+S3
-result=EU_change_USA(S1,S2,S3)
-print (result)
+def EU_change_USA_data(date):
+    S1 = date[:3]
+    S2 = date[3:6]
+    S3 = date[6:]
+    result=S2+S1+S3
+    return result, date
+
+result, original = EU_change_USA_data("12.21.2016")
+print(result, original)
 
 8.
 import math
