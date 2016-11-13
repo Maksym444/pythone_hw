@@ -92,6 +92,14 @@ num3 = a //100
 result=sum_num(a)
 print("Сумма цифр числа:",result)
 
+12. 
+num=int(43)
+def nechetnoe_chislo(num):
+ result = (num % 2) != 0
+ return result
+result=nechetnoe_chislo(num)
+print (result)
+
 23. Variant 1 
 import math
 import random
