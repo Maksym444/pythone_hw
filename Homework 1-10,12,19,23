@@ -122,6 +122,22 @@ result = find_average_from_list(simple_list)
 print (result)
 
 
+19. 
+import math
+n = int(100)
+lst=[]
+for i in range(2, n+1):
+    for a in lst:
+        if a > int((math.sqrt(i)) + 1):
+            lst.append(i)
+            break
+        if (i % a == 0):
+            break
+    else:
+        lst.append(i)
+print (lst)
+
+
 
 23. Variant 2
 import random
