@@ -64,6 +64,34 @@ result1=in_middle(string1,string2)
 result=in_middle(result1,string1)
 print (result)
 
+
+9.
+import math
+def grad2rad(angle):
+    result=math.radians(angle)
+    return result
+angle1 = grad2rad(60)
+result1 = math.cos(angle1)
+print(math.cos(result1),'\n%s' %angle1)
+angle2 = grad2rad(45)
+result2 = math.cos(angle2)
+print(math.cos(result2),'\n%s' %angle2)
+angle3 = grad2rad(40)
+result3 = math.cos(angle3)
+print(math.cos(result3),'\n%s' %angle3)
+
+10.
+a = input("Введите трехзначное число: ")
+def sum_num (a):
+    result=num1+num2+num3
+    return result
+a = int(a)
+num1 = a % 10
+num2 = a % 100//10
+num3 = a //100
+result=sum_num(a)
+print("Сумма цифр числа:",result)
+
 23. Variant 1 
 import math
 import random
