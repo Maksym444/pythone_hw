@@ -83,12 +83,12 @@ print(math.cos(result3),'\n%s' %angle3)
 10.
 a = input("Введите трехзначное число: ")
 def sum_num (a):
+    a = int(a)
+    num1 = a % 10
+    num2 = a % 100 // 10
+    num3 = a // 100
     result=num1+num2+num3
     return result
-a = int(a)
-num1 = a % 10
-num2 = a % 100//10
-num3 = a //100
 result=sum_num(a)
 print("Сумма цифр числа:",result)
 
