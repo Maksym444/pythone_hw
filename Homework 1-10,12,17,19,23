@@ -124,6 +124,28 @@ for i in range(2, n+1):
 print (lst)
 
 
+22.
+import random
+def chooose ():
+    x=random.randint(1,10)
+    print(x)
+    while True:
+        y=input("Number:")
+        if int(y)> 10:
+            print("Казна полна, Милорд!")
+            continue
+        if int(y)<- 1:
+            print("Казна пуста, Милорд!")
+            continue
+        if int (y)<x:
+           print("Нужно больше золота, Милорд!")
+        elif int (y)>x:
+            print("Нужно меньше, Милорд!")
+        else:
+            print("За Короля!!!")
+            break
+chooose()
+
 23. Variant 1 
 import math
 import random
@@ -164,3 +186,32 @@ print_list(rand_list)
 result = find_average_from_list(rand_list)
 print('\n')
 print(result)
+
+
+29. 
+import string
+import random
+def generate_password(pass_len=8):
+    all_sym = string.ascii_letters + string.digits + '_'
+    while True:
+        password = ''
+        lowercase = 0
+        uppercase = 0
+        ints = 0
+        for i in range(pass_len):
+            _ = all_sym[random.randint(0, len(all_sym)-1)]
+            password += _
+            if _ in string.ascii_lowercase:
+                lowercase += 1
+            elif _ in string.ascii_uppercase:
+                uppercase += 1
+            elif _ in string.digits:
+                ints += 1
+        if lowercase and uppercase and ints:
+            return password
+
+print(generate_password(8))
+print(generate_password(8))
+print(generate_password(8))
+print(generate_password(8))
+print(generate_password(8))
