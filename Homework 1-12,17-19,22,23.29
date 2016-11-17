@@ -133,7 +133,7 @@ def bigg_num(number):
     max_num = max([int(i) for i in str(number)])
     # print (number)
     # print (max_num)
-    return (max_num)
+    return (number, max_num)
 print (bigg_num(0))
 
 19. 
