@@ -123,6 +123,19 @@ def fac(n):
 result= (fac(5))
 print (result)
 
+
+18.
+import random
+def bigg_num(number):
+    number=[0]
+    digit1=random.randint(0,999999999999)
+    number=digit1
+    max_num = max([int(i) for i in str(number)])
+    # print (number)
+    # print (max_num)
+    return (max_num)
+print (bigg_num(0))
+
 19. 
 import math
 n = int(100)
