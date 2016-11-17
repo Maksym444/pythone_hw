@@ -180,16 +180,16 @@ def chooose ():
     x=random.randint(1,10)
     print(x)
     while True:
-        y=input("Number:")
-        if int(y)> 10:
+        y= int(input("Number:"))
+        if y>10:
             print("Казна полна, Милорд!")
             continue
-        if int(y)<- 1:
+        if y<-1:
             print("Казна пуста, Милорд!")
             continue
-        if int (y)<x:
+        if  y<x:
            print("Нужно больше золота, Милорд!")
-        elif int (y)>x:
+        elif y>x:
             print("Нужно меньше, Милорд!")
         else:
             print("За Короля!!!")
