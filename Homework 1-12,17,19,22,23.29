@@ -92,6 +92,21 @@ def sum_num (a):
 result=sum_num(a)
 print("Сумма цифр числа:",result)
 
+11. 
+import math
+def triangle_area(A,B):
+    A = input("Длина первого катета: ")
+    B = input("Длина второго катета: ")
+    A = int(float(A))
+    B = int(float(B))
+    C = math.sqrt(A ** 2 + B ** 2)
+    S = (A * B) / 2
+    P = A + B + C
+    print("Площадь треугольника: %.2f" % S)
+    print("Периметр треугольника: %.2f" % P)
+    return
+triangle_area(0,0)
+
 12. 
 num=int(43)
 def nechetnoe_chislo(num):
