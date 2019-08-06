@@ -160,7 +160,22 @@ def chetnoe_chislo(num):
  #return (num % 2) != 0 #нечетное
 print (chetnoe_chislo(num))
 
-
+#13.
+import math
+def circles(x1,x2,y1,y2):
+    c=math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+    return c
+x1= int (input ("Введите точку 1 для первого круга:"))
+y1=int (input ("Введите точку 2 для первого круга:"))
+r1=int (input ("Введите радиус для первого круга:"))
+x2=int (input ("Введите точку 1 для второго круга:"))
+y2=int (input ("Введите точку 2 для второго круга:"))
+r2=int (input ("Введите радиус для второго круга:"))
+distance=circles(x1,x2,y1,y2)
+if distance>r1+r2 or distance==r1+r2:
+    print ("Окружности не пересекаються")
+if distance<r1+r2 or (distance+r1)<=r2:
+    print("Окружности пересекаються")
 
 15.
 import math
