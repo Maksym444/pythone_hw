@@ -176,6 +176,45 @@ if distance>r1+r2 or distance==r1+r2:
     print ("Окружности не пересекаються")
 if distance<r1+r2 or (distance+r1)<=r2:
     print("Окружности пересекаються")
+Better:
+import math
+def circles(x1,x2,y1,y2,r1,r2):
+    circles=math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+    if not circles:
+        return "Окружности не пересекаються" if r1 != r2 or circles > r1 + r2 else "Окружности пересекаються"
+    else:
+        return "Окружности не пересекаються" if circles > r1 + r2 or circles == r1 + r2 else "Окружности пересекаються"
+x1= int (input ("Введите точку 1 для первого круга:"))
+y1=int (input ("Введите точку 2 для первого круга:"))
+r1=int (input ("Введите радиус для первого круга:"))
+x2=int (input ("Введите точку 1 для второго круга:"))
+y2=int (input ("Введите точку 2 для второго круга:"))
+r2=int (input ("Введите радиус для второго круга:"))
+print (circles(x1, y1, r1, x2, y2, r2))
+
+NOT MINE, but mine
+from math import sqrt
+def calc_interception(x1, y1, r1, x2, y2, r2):
+    cen_dist = sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+    if not cen_dist:
+        return "Нет" if r1 != r2 else "Да"
+    else:
+        return "Нет" if cen_dist > r1 + r2 else "Да"
+x1= int (input ("Введите точку 1 для первого круга:"))
+y1=int (input ("Введите точку 2 для первого круга:"))
+r1=int (input ("Введите радиус для первого круга:"))
+x2=int (input ("Введите точку 1 для второго круга:"))
+y2=int (input ("Введите точку 2 для второго круга:"))
+r2=int (input ("Введите радиус для второго круга:"))
+print (calc_interception(x1, y1, r1, x2, y2, r2))
+data = []
+while True:
+    line = input()
+    if not line:
+        break
+    data.append(float(line))
+
+print(calc_interception(*data))
 
 15.
 import math
