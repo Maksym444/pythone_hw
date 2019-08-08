@@ -374,6 +374,16 @@ result = find_average_from_list(rand_list)
 print('\n')
 print(result)
 
+23. 2019 variant
+import random
+simple_list=[0]*20
+def fill_random_list(lst):
+    for i in range(0, len(lst)):
+        random_num=random.randint(0,100)
+        lst[i]=random_num
+fill_random_list(simple_list)
+print(sum(simple_list)/len(simple_list))
+
 
 29. 
 import string
