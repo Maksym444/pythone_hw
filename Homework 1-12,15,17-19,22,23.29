@@ -216,15 +216,44 @@ while True:
 
 print(calc_interception(*data))
 
+14.
+def have_trains_crashed(a, b, c, d):
+    if a/(c/10*d)>=b/(c/10*c-d):
+        print("Пронеслоооо))")
+    else:
+        print ("Пошли кишки по трубам))")
+spd_tr1 =float(input("Скорость первого поезда:"))
+spd_tr2 =float(input("Скорость второго поезда:"))
+rass_to =float(input("Растояние пути:"))
+rass_to_sver_1 = float(input("Растояние пути первого поезда до поворота:"))
+have_trains_crashed(spd_tr1,spd_tr2,rass_to,rass_to_sver_1)
+
 15.
 import math
-a = float(int(5))
-b = float(int(4))
-c = float(int(2))
+a = float(input("a="))
+b = float(input("b="))
+c = float(input("c="))
+x=0
 def discr_2(discr):
-    result=b ** 2 - 4 * a * c
+    return b ** 2 - 4 * a * c
+print("Дискриминант D = %.2f" % discr_2(int))
+if x > 0:
+    x1 = (-b + math.sqrt(discr_2(int))) / (2 * a)
+    x2 = (-b - math.sqrt(discr_2(int))) / (2 * a)
+    print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
+elif discr_2 == 0:
+    x = -b / (2 * a)
+    print("x = %.2f" % x)
+else:
+    print("Корней нет")
+
+a = float(input("a="))
+b = float(input("b="))
+c = float(input("c="))
+def discr_2(discr):
+    result = b ** 2 - 4 * a * c
     return result
-x=discr_2(discr_2)
+x = discr_2(discr_2)
 print("Дискриминант D = %.2f" % discr_2(discr_2))
 if x > 0:
     x1 = (-b + math.sqrt(discr_2)) / (2 * a)
@@ -248,13 +277,21 @@ print (result)
 
 18.
 import random
+def generate_random_number(length):
+    return (random.randint(0,9) for _ in range(length))
+print(generate_random_number(11))
+print (max(int(x) for x in str(generate_random_number(11))))
+
+def generate_random_number(upper,lower):
+    return random.randint(upper,lower)
+n=generate_random_number(000000000000,999999999999)
+print(n)
+print (max(str(n)))
+
 def bigg_num(number):
-    number=[0]
-    digit1=random.randint(0,999999999999)
-    number=digit1
+    digit=random.randint(0,999999999999)
+    number=digit
     max_num = max([int(i) for i in str(number)])
-    # print (number)
-    # print (max_num)
     return (number, max_num)
 print (bigg_num(0))
 
