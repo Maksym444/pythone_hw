@@ -310,28 +310,40 @@ for i in range(2, n+1):
         lst.append(i)
 print (lst)
 
+def primes(n): #"""Возвращает все простые от 2 до N"""
+  a = set(range(2, n))
+  for num in range(2, n):
+    if num in a:
+      a -= set(range(2*num, n, num))
+  return a
+print (primes(100))
+
+def prime_number(n):
+   for num in range(2,n):
+       if all(num % i != 0 for i in range(2, num)):
+           print(num)
+prime_number(100)
 
 22.
 import random
-def chooose ():
-    x=random.randint(1,10)
-    print(x)
+def choose():
+    x = random.randint(1, 10)
     while True:
-        y= int(input("Number:"))
-        if y>10:
-            print("Казна полна, Милорд!")
+        y = int(input("Введите число:"))
+        if y > 10:
+            print("Диапазон числа от 1 до 10. Введите меньше! ")
             continue
-        if y<-1:
-            print("Казна пуста, Милорд!")
+        if y < -1:
+            print("Диапазон числа от 1 до 10. Введите больше! ")
             continue
-        if  y<x:
-           print("Нужно больше золота, Милорд!")
-        elif y>x:
-            print("Нужно меньше, Милорд!")
+        if x < y:
+            print("Введите меньше! ")
+        elif x > y:
+            print("Введите больше! ")
         else:
-            print("За Короля!!!")
+            print("Поздравляю Вы угадали!")
             break
-chooose()
+choose()
 
 23. Variant 1 
 import math
