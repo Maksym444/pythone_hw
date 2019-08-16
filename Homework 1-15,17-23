@@ -264,7 +264,14 @@ elif discr_2 == 0:
     print("x = %.2f" % x)
 else:
     print("Корней нет")
-
+    
+16.
+def x_z(a,b):
+    x = 0
+    for i in range(a,b):
+        x=x+i
+    print (x)
+x_z(ord('x'), ord('{'))
 
 17.
 def fac(n):
@@ -273,7 +280,6 @@ def fac(n):
     return fac(n - 1) * n
 result= (fac(5))
 print (result)
-
 
 18.
 import random
@@ -334,7 +340,7 @@ stepen_3()
 
 21.
 def chis_1_7():
-    for number in range(1000):
+    for i in range(1000):
             if str(number).find("1") !=-1:
                     if str(number).find("7") != -1:
                             print(number)
