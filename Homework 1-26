@@ -418,6 +418,46 @@ def fill_random_list(lst):
 fill_random_list(simple_list)
 print(sum(simple_list)/len(simple_list))
 
+24.
+import random
+numbers=[]
+for i in range(10):
+    numbers.append(int(random.random() * 10))
+print (numbers)
+
+def chet_nechet(numbers):
+    odd = [i for i in numbers if i % 2 == 0]
+    even = [i for i in numbers if i % 2 == 1]
+    return (sum(odd)-sum(even))
+print (chet_nechet(numbers))
+
+25.
+import random
+nechet_numbers=[i for i in range(1,100) if i%2==1]
+print(nechet_numbers)
+random.shuffle(nechet_numbers)
+print(nechet_numbers)
+
+26.
+import numpy
+x=[]
+for i in range(0,5):
+    x.append(int(random.random() * 5))
+average=numpy.mean(x)
+print(numpy.mean(x))
+print(x)
+y=[]
+for i in range(0,5):
+    y.append(int(random.random() * 5))
+average=numpy.mean(y)
+print(numpy.mean(y))
+print(y)
+if x>y:
+    print ("Среднеарифметическое первого списка больше!!!")
+elif x<y:
+    print("Среднеарифметическое второго списка больше !!!")
+else:
+    print("Они равны !!!")
 
 29. 
 import string
