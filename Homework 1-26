@@ -458,6 +458,21 @@ elif x<y:
     print("Среднеарифметическое второго списка больше !!!")
 else:
     print("Они равны !!!")
+    
+27.
+from random import randint
+from collections import Counter
+numbers = []
+for i in range(11):
+    numbers.append(randint(-1, 1))
+print(numbers)
+count = Counter(numbers)
+print(count)
+
+Variant 2
+from random import randint
+lst = [randint(-1, 1) for i in range(11)]
+print (lst)
 
 29. 
 import string
