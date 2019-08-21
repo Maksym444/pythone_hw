@@ -459,20 +459,43 @@ elif x<y:
 else:
     print("Они равны !!!")
     
-27.
+27
+#Variant 1
 from random import randint
-from collections import Counter
 numbers = []
 for i in range(11):
     numbers.append(randint(-1, 1))
 print(numbers)
-count = Counter(numbers)
-print(count)
+a=numbers.count(-1)
+b=numbers.count(0)
+c=numbers.count(1)
+print(a,b,c)
+if a>b and a>c:
+    print ("Чаще всего упоминаеться -1, а именно", a, "раз")
+elif b>a and b>c:
+    print(("Чаще всего упоминаеться 0, а именно", b, "раз"))
+elif c>a and c>b:
+    print(("Чаще всего упоминаеться 1, а именно", c, "раз"))
+else:
+    print("Как минимум два числа имеют одинаковое колличество")
 
-Variant 2
+# Variant 2
+
 from random import randint
 lst = [randint(-1, 1) for i in range(11)]
 print (lst)
+a=lst.count(-1)
+b=lst.count(0)
+c=lst.count(1)
+print(a,b,c)
+if a>b and a>c:
+    print ("Чаще всего упоминаеться -1, а именно", a, "раз")
+elif b>a and b>c:
+    print(("Чаще всего упоминаеться 0, а именно", b, "раз"))
+elif c>a and c>b:
+    print(("Чаще всего упоминаеться 1, а именно", c, "раз"))
+else:
+    print("Как минимум два числа имеют одинаковое колличество")
 
 29. 
 import string
